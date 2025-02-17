@@ -3,6 +3,14 @@ DROP TABLE IF EXISTS facturas;
 DROP TABLE IF EXISTS productos;
 DROP TABLE IF EXISTS clientes;
 
+CREATE TABLE IF NOT EXISTS clientes (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    apellido VARCHAR(255) NOT NULL,
+    documento VARCHAR(20) NOT NULL
+);
+
+
 -- Crear tabla de Clientes
 CREATE TABLE clientes (
     id SERIAL PRIMARY KEY,
